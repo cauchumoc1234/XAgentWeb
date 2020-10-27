@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/user.css">
+    <title>X-Agent | The best for you</title>
+</head>
+<body>
+    <header class="container-fluid header">
+        <div class="row">
+            <div class="col-lg-3 col-md-12 col-9  logo">
+                <a href="">
+                    <img src="./image//Logo_head.png" alt="brand">
+                </a>
+            </div>
+            <div class="col-lg-7 col-md-9 col-2 menu-row">
+                <a href="" class="navbtn"><i class="fa fa-bars" aria-hidden="true"></i></a>
+                <a href="#" class="item">SHOE</a>
+                <a href="#" class="item">SHOE</a>
+                <a href="#" class="item">SHOE</a>
+                <a href="#" class="item">SHOE</a>
+                <a href="#" class="item">SHOE</a>
+            </div>
+            <div class="col-lg-2 col-md-3 col-12 widget-container">
+                <a href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-user" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i></a>
+            </div>
+        </div>
+    </header>
+    <div class="body">
+        <div class="container box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" id="btn-1">Profile</button>
+                <button type="button" class="toggle-btn" id="btn-2">Payment</button>
+                <button type="button" class="toggle-btn" id="btn-3">History</button>
+            </div>
+            <form action="" id="info">
+                <h1>Profile</h1>
+                <label for="">Username</label>
+                <input type="text" name="username" id="username" value="admin" readonly>
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" placeholder="*********" readonly>
+                <a href="#" style="display: block; margin-bottom: 10px;">Change password</a>
+                <label for="">Fullname</label>
+                <input type="text" name="fullname" id="fullname" value="Pham Duc Anh">
+                <span id="fullname_err" class="err badge badge-danger mb-2"></span>
+                <label for="birthdate">Birthdate</label>
+                <input type="date" name="birthdate" id="birthdate">
+                <span class="err badge badge-danger mb-2" id="birthdate_err"></span>
+                <label for="">Phonenumbers</label>
+                <input type="text" name="phonenumber" id="phonenumber" >
+                <span class="err badge badge-danger mb-2" id="phonenumber_err"></span>
+                <label for="">Address</label>
+                <input type="text" name="address" id="address" >
+                <span class="err badge badge-danger mb-2" id="address_err"></span>
+                <label for="gender">Gender</label>
+                <select name="gender" id="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+                <button class="btn btn-success" type="button" id="submit-btn">Save changes</button>
+                <button type="reset" class="btn btn-danger">Reset changes</button>
+            </form>
+            <form action="" id="payment">
+                <h1>Payment</h1>
+                <hr>
+                <div class="first">
+                    <p>Your bank accounts</p>
+                    <button type="button" class="btn "> +  Add a new bank account</button>
+                </div>
+                <hr>
+                <div class="tag default">
+                    <div class="acc">
+                        <span class="bank-name">BIDV (Bank for Investment and Development of Vietnam)</span><span class="badge badge-success">Default</span>
+                        <p class="cus-name">PHAM DUC ANH</p>
+                        <p class="acc-nums">Number: *****9088</p>
+                    </div>
+                    <div class="option">
+                        <span class="badge badge-danger">Remove</span>
+                        <span class="badge badge-light set-df">Set as default</span>
+                    </div>
+                </div>
+                <hr>
+                <div class="tag">
+                    <div class="acc">
+                        <span class="bank-name">BIDV (Bank for Investment and Development of Vietnam)</span><span class="badge badge-success"></span>
+                        <p class="cus-name">PHAM DUC ANH</p>
+                        <p class="acc-nums">Number: *****2154</p>
+                    </div>
+                    <div class="option">
+                        <span class="badge badge-danger">Remove</span>
+                        <span class="badge badge-secondary set-df">Set as default</span>
+                    </div>
+                </div>
+                <hr>
+                <button class="btn btn-success" type="button" id="submit-btn">Save changes</button>
+                <button type="reset" class="btn btn-danger">Reset changes</button>
+            </form>
+            <form action="" id="order-list">
+                <h1>Orders</h1>
+                <hr>
+                <div class="order">
+                    <div class="order-info">
+                        <p class="order_id" style="color: orange">#18020153</p>
+                        <p class="product-name">Product name: 
+                            iPhone 12
+                        </p>
+                        <p class="price">Price: 999$</p>
+                        <p class="amount">Amount: 2</p>
+                        <p></p>
+                    </div>
+                    <div class="order-status">
+                        <p class="status">Status: Confirming</p>
+                        <button type="button" class="btn btn-light">Cancel this order</button>
+                    </div>
+                </div>
+                <hr>
+                <div class="order">
+                    <div class="order-info">
+                        <p class="order_id" style="color: orange">#18020243</p>
+                        <p class="product-name">Product name: 
+                            iPhone 11 Pro
+                        </p>
+                        <p class="price">Price: 799$</p>
+                        <p class="amount">Amount: 3</p>
+                        <p></p>
+                    </div>
+                    <div class="order-status">
+                        <p class="status">Status: Shipping</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="order">
+                    <div class="order-info">
+                        <p class="order_id" style="color: orange">#18021259</p>
+                        <p class="product-name">Product name: 
+                            iPhone 11
+                        </p>
+                        <p class="price">Price: 799$</p>
+                        <p class="amount">Amount: 3</p>
+                        <p></p>
+                    </div>
+                    <div class="order-status">
+                        <p class="status">Status: Completed</p>
+                        <p class="done-date">Donedate: 27-9-2020</p>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="./js/form_valid.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#btn-1").click(function(){
+                $("#btn").css({"left":"0%"})
+                $("#info").show()
+                $("#payment").hide()
+                $("#order-list").hide()
+            }
+            )
+            $("#btn-2").click(function(){
+                $("#btn").css({"left":"33%"})
+                $("#info").hide()
+                $("#payment").show()
+                $("#order-list").hide()
+                
+            }
+            )
+            $("#btn-3").click(function(){
+                $("#btn").css({"left":"68%"})
+                $("#info").hide()
+                $("#payment").hide()
+                $("#order-list").show()
+            }
+            )
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+.box{
+    margin: 100px auto;
+    padding: 15px 5%;
+    width: 60%;
+    max-width: 1000px;
+    min-height: 400px;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    overflow: hidden;
+}
+.box label,input{
+    display: block;
+    margin-bottom: 20px;
+}
+.box label{
+    font-weight: 500;
+}
+.box input,select{
+    margin-bottom: 20px;
+    width: 100%;
+    outline: none;
+    padding: 5px 10px;
+    transition: linear 0.2s;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+.box input:focus{
+    background-color: rgb(218, 217, 216);
+}
+.button-box{
+    margin-bottom: 15px;
+    position: relative;
+    box-shadow: 0 0 20px 9px #ff61241f;
+    border-radius: 30px;
+    display: flex;
+    width: 70%;
+    margin: 15px auto;
+
+}
+.button-box button{
+    padding: 10px;
+    border-radius: 30px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    flex-grow: 1;
+    z-index: 0;
+    text-align: center;
+    outline: none;
+}
+
+#btn{
+    transition: 0.3s;
+    position: absolute;
+    height: 100%;
+    width: 32%;
+    background-color: aqua;
+    background: linear-gradient(to right, #ff105f,#ffad06);
+    border-radius: 30px;
+    left: 0;
+}
+.box form h1{
+    color: salmon;
+}
+#order-list{
+    display: none;
+    transition: 0.3s;
+}
+#payment{
+    display: none;
+    transition: 0.3s;
+}
+#payment .first{
+    display: flex;
+    align-items: center;
+}
+#payment .first p{
+    flex-grow: 1;
+    font-size: 22px;
+    font-weight: bold;
+    color: #534322;
+    margin-bottom: 0;
+    margin-right: 5%;
+}
+#payment .first button{
+    background-color: #f57e4f;
+    color: #f7eef1;
+    font-weight: 500;
+    flex-grow: 1;
+    font-size: 12px;
+}
+.tag{
+    display: flex;
+}
+.acc{
+    flex-grow: 2;
+    flex-wrap: wrap;
+}
+.option{
+    flex-grow: 2;
+}
+.option span{
+    display: block;
+    margin-bottom: 5%;
+    cursor: pointer;
+}
+.default .set-df{
+    cursor: context-menu;
+}
+.order{
+    display: flex;
+}
+.order .order-info{
+    flex-grow: 2;
+}
