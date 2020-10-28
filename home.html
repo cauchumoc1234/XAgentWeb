@@ -22,45 +22,48 @@
                 <div class="item navbtn">
                     <i class="fa fa-bars" aria-hidden="true"></i>
                 </div>
-                <div class="item drop">
-                    <a href="#" class="item drop">CLOTHING</a>
-                    <ul class="drop-menu">
-                        <li><a href="" class="item">SHOE</a></li>
-                        <li><a href="" class="item">ASDASDASDASDASD</a></li>
-                        <li><a href="" class="item">SHOE</a></li>
-                        <li><a href="" class="item">SHOE</a></li>
-                    </ul>
+                <div class="main">
+                    <div class="item drop">
+                        <a href="#" class="item drop">CLOTHING</a>
+                        <ul class="drop-menu">
+                            <li><a href="" class="item">SHOE</a></li>
+                            <li><a href="" class="item">ASDASDASDASDASD</a></li>
+                            <li><a href="" class="item">SHOE</a></li>
+                            <li><a href="" class="item">SHOE</a></li>
+                        </ul>
+                    </div>
+                    <div class="item drop">
+                        <a href="#" class="item">SHOES</a>
+                        <ul class="drop-menu">
+                            <li><a href="" class="item">SHOE</a></li>
+                            <li><a href="" class="item">ASDASDASDASDASD</a></li>
+                            <li><a href="" class="item">SHOE</a></li>
+                            <li><a href="" class="item">SHOE</a></li>
+                        </ul>
+                    </div>
+                    <div class="item drop">
+                        <a href="#" class="item">ACCESSORIES</a>
+                        <ul class="drop-menu">
+                            <li><a href="" class="item">SHOE</a></li>
+                            <li><a href="" class="item">ASDASDASDASDASD</a></li>
+                            <li><a href="" class="item">SHOE</a></li>
+                            <li><a href="" class="item">SHOE</a></li>
+                        </ul>
+                    </div>
+                    <div class="item drop">
+                        <a href="#" class="item">BRANDS</a>
+                        <ul class="drop-menu">
+                            <li><a href="" class="item">SHOE</a></li>
+                            <li><a href="" class="item">ASDASDASDASDASD</a></li>
+                            <li><a href="" class="item">SHOE</a></li>
+                            <li><a href="" class="item">SHOE</a></li>
+                        </ul>
+                    </div>
+                    <div class="item saleoff">
+                        <a href="#" class="item">SALE OFF !</a>
+                    </div>
                 </div>
-                <div class="item drop">
-                    <a href="#" class="item">SHOES</a>
-                    <ul class="drop-menu">
-                        <li><a href="" class="item">SHOE</a></li>
-                        <li><a href="" class="item">ASDASDASDASDASD</a></li>
-                        <li><a href="" class="item">SHOE</a></li>
-                        <li><a href="" class="item">SHOE</a></li>
-                    </ul>
-                </div>
-                <div class="item drop">
-                    <a href="#" class="item">ACCESSORIES</a>
-                    <ul class="drop-menu">
-                        <li><a href="" class="item">SHOE</a></li>
-                        <li><a href="" class="item">ASDASDASDASDASD</a></li>
-                        <li><a href="" class="item">SHOE</a></li>
-                        <li><a href="" class="item">SHOE</a></li>
-                    </ul>
-                </div>
-                <div class="item drop">
-                    <a href="#" class="item">BRANDS</a>
-                    <ul class="drop-menu">
-                        <li><a href="" class="item">SHOE</a></li>
-                        <li><a href="" class="item">ASDASDASDASDASD</a></li>
-                        <li><a href="" class="item">SHOE</a></li>
-                        <li><a href="" class="item">SHOE</a></li>
-                    </ul>
-                </div>
-                <div class="item saleoff">
-                    <a href="#" class="item">SALE OFF !</a>
-                </div>
+                
             </div>
             <div class="col-lg-2 col-md-3 col-12 widget-container" style="position: relative;">
                 <a href="#" id="search-btn"><i class="fa fa-search" aria-hidden="true"></i>
@@ -358,6 +361,21 @@
         $(document).ready(function(){
             $("#search-btn").click(function(){
                 $("#search-box").fadeToggle("slow")
+            })
+            $(".navbtn").click(function(){
+                
+                $(".main").toggle("slow");
+            })
+            $(window).resize(function(){
+                if(window.outerWidth > 800){
+                    
+                    $(".main").css("display","flex")
+                }
+                else
+                {
+                    $(".main").css("display","none")
+                } 
+                console.log(typeof window.outerWidth)
             })
         })
     </script>
