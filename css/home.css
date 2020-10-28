@@ -9,7 +9,7 @@ a:hover{
     transition: color linear 0.1s,background-color linear 0.1s ;
 }
 body{
-    background-image: url("/image/background.png");
+    background-image: url("https://designwoop.com/uploads/2012/05/17580-613x460.jpg");
 }
 .header{
     height: 10vh;
@@ -43,75 +43,60 @@ body{
     align-items: center;
     padding: 0;
 }
-.row .menu-row a{
+.row .menu-row .item{
     display: flex;
     color: black;
-    font-weight: bolder;
+    font-size: 20px;
+    font-weight: 400;
     flex-grow: 1;
     height: 100%;
     justify-content: center;
     align-items: center;
-    transition: 0.4s;
+    text-decoration: none;
+    transition: 0.3s;
 }
-.menu-row a:hover{
-    padding-top: 1%;
+.menu-row .item a:hover{
     color: rgb(172, 108, 83);
+    text-decoration: underline;
+    transform: scale(1.1);
 }
-
-/* header{
-    max-height: 150px;
-    min-height: 100px;
-    background-color: #fff;
-    box-sizing: border-box;
+.row .menu-row .saleoff a{
+    background-color: red;
+    color: aliceblue !important;
 }
-.row > div{
-    padding: 0;
+.drop{
+    position: relative;
+    
 }
-header .row{
-    max-height: 150px;
-    box-sizing: border-box;
-    padding: 20px 0 0 0;
-    margin: 0;
+.drop-menu{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    list-style-type: none;
+    background-color: rgb(255, 255, 255);
+    z-index: -9;
+    opacity: 0;
+    min-width: 100%;
+    transition: opacity linear 0.4s;
+    
 }
-
-.row .logo{
-    display: block;  
+.drop:hover .drop-menu{
+    z-index: 1;
+    opacity: 1;
 }
-.logo a{
-    display: block;
-    max-height: 100%;
-    max-width: 100%;
+.drop-menu li{
+    margin: 5% 15px;
+    
 }
-a img{
-    display: block;
-    max-height: 100%;
-    max-width: 100%;
-    object-fit: contain;
-    transition: transform linear 0.2s;
+.drop-menu li .item{
+    word-wrap: break-word;
+    justify-content: left !important;
 }
-
-.menu-row{
-    min-height: 100px;
-    max-height: 70%;
-    display: flex;
-    align-items: center;
-}
-.menu-row a{
-    display: flex;
-    flex-grow: 1;
-    height: 100%;
-    max-height: 50px;
-    align-items: center;
-    justify-content: center;
-    color: black;
-    font-weight: bold;
-}
-.menu-row a:hover{
-    background-color: rgb(0, 0, 0);
-    color: white;
-}
-
 /* navbar button */
+.row .menu-row div:first-child{
+    padding: 10px;
+    display: none;
+}
 .navbtn{
     display: flex;
     text-align: center;
@@ -119,14 +104,35 @@ a img{
 .navbtn i{
     display: block;
 }
-.menu-row a:first-child{
-    padding: 10px;
-    display: none;
-}
+
 .widget-container{
     height: 30%;
     display: flex;
     align-items: center;
+}
+
+#search-box{
+    position: absolute;
+    top: 100%;
+    z-index: 1;
+    display: none;
+    
+    width: 100%;
+    background-color: black;
+    padding: 5%;
+    margin: 0;
+}
+#search-box input{
+    display: inline-block;
+    width: 80%;
+    outline: none;
+    flex-grow: 1;
+    padding-left: 5px;
+}
+#search-box button{
+    border: none;
+    padding: 1% 4%;
+    flex-grow: 1;
 }
 .header .widget-container a{
     display: flex;
@@ -223,7 +229,6 @@ input[name="r"]{
 .highlight a:hover img{
     transform: scale(1.1);
     object-fit: cover;
-    z-index: 99;
 }
 .block{
     width: 85%;
@@ -417,12 +422,12 @@ footer{
     }
 }
 @media screen and (max-width:767px){
-    .menu-row a:first-child{
+    .row  .menu-row div:first-child{
         display: block;
         flex-grow: 1;
         font-size: 30px;
     }
-    .menu-row a:not(:first-child){
+    .row  .menu-row div:not(:first-child){
         display: none;
     }
     .widget-container{

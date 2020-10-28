@@ -15,21 +15,44 @@
     <header class="container-fluid header">
         <div class="row">
             <div class="col-lg-3 col-md-12 col-9  logo">
-                <a href="">
+                <a href="./profile.html">
                     <img src="./image//Logo_head.png" alt="brand">
                 </a>
             </div>
             <div class="col-lg-7 col-md-9 col-2 menu-row">
-                <a href="" class="navbtn"><i class="fa fa-bars" aria-hidden="true"></i></a>
-                <a href="#" class="item">SHOE</a>
-                <a href="#" class="item">SHOE</a>
-                <a href="#" class="item">SHOE</a>
-                <a href="#" class="item">SHOE</a>
-                <a href="#" class="item">SHOE</a>
+                <div class="item navbtn">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </div>
+                <div class="item">
+                    <a href="#" class="item">CLOTHING</a>
+                </div>
+                <div class="item drop">
+                    <a href="#" class="item">SHOES</a>
+                    <ul class="drop-menu">
+                        <li><a href="" class="item">SHOE</a></li>
+                        <li><a href="" class="item">ASDASDASDASDASD</a></li>
+                        <li><a href="" class="item">SHOE</a></li>
+                        <li><a href="" class="item">SHOE</a></li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <a href="#" class="item">ACCESSORIES</a>
+                </div>
+                <div class="item">
+                    <a href="#" class="item">BRANDS</a>
+                </div>
+                <div class="item saleoff">
+                    <a href="#" class="item">SALE OFF !</a>
+                </div>
             </div>
-            <div class="col-lg-2 col-md-3 col-12 widget-container">
-                <a href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
-                <a href="#"><i class="fa fa-user" aria-hidden="true"></i></a>
+            <div class="col-lg-2 col-md-3 col-12 widget-container" style="position: relative;">
+                <a href="#" id="search-btn"><i class="fa fa-search" aria-hidden="true"></i>
+                </a>
+                <form id="search-box">
+                    <input type="text">
+                    <button><i class="fa fa-search" aria-hidden="true"></i></button>
+                </form>
+                <a href="./customer.html"><i class="fa fa-user" aria-hidden="true"></i></a>
                 <a href="#"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i></a>
             </div>
         </div>
@@ -156,6 +179,37 @@
             </form>
         </div>
     </div>
+    <footer>
+        
+        <div class="col-12 col-lg-3 col-sm-4 topic">
+            <h2>CATEGORIES</h2>
+            <a href="#">For Men</a>
+            <a href="#">For Women</a>
+            <a href="#">Accessories</a>
+            <a href="#">Other</a>
+        </div>
+        <div class="col-12 col-lg-3 col-sm-4 topic">
+            <h2>ACCOUNT</h2>
+            <a href="#">Wishlist</a>
+            <a href="#">Compare</a>
+            <a href="#">Subcribe</a>
+            <a href="#">Login</a>
+        </div>
+        <div class="col-12 col-lg-3 col-sm-4 topic">
+            <h2>QUICK LINKS</h2>
+            <a href="#">Shipping & Returns</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Vacancies</a>
+        </div>
+        <div class="col-12 col-lg-3 col-sm-4 topic">
+            <h2>CONTACT</h2>
+            <a href="">Address: 1 Pham Van Dong, Cau Giay, Ha Noi</a>
+            <a href=""><i class="fa fa-phone-square" aria-hidden="true"></i> 033.522.9871</a>
+            <a href="#"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+            <a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+        </div>
+    </footer>
     <script src="./js/form_valid.js"></script>
     <script>
         $(document).ready(function(){
