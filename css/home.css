@@ -499,6 +499,10 @@ footer{
     .item a{
         color: #fff !important;
     }
+    .main .item a{
+        height: 3%;
+        margin-left: 5%;
+    }
     .widget-container{
         height: 50px;
     }
