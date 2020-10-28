@@ -384,7 +384,7 @@ footer{
 }
 .topic{
     min-height: 150px;
-    text-align: center;
+    text-align: left;
     color: rgb(177, 177, 177);
 }
 
