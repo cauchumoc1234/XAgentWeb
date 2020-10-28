@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/shoes.css">
+    <title>X-Agent | The best for you</title>
+</head>
+
+<body>
+    <header class="container-fluid header">
+        <div class="row">
+            <div class="col-lg-3 col-md-12 col-9  logo">
+                <a href="./home.html">
+                    <img src="./image//Logo_head.png" alt="brand">
+                </a>
+            </div>
+            <div class="col-lg-7 col-md-9 col-2 menu-row">
+                <div class="item navbtn">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </div>
+                <div class="item drop">
+                    <a href="#" class="item drop">CLOTHING</a>
+                    <ul class="drop-menu">
+                        <li><a href="" class="item">Jackets</a></li>
+                        <li><a href="" class="item">Pants</a></li>
+                        <li><a href="" class="item">Shirts</a></li>
+                        <li><a href="" class="item">Jeans</a></li>
+                    </ul>
+                </div>
+                <div class="item drop">
+                    <a href="#" class="item">SHOES</a>
+                    <ul class="drop-menu">
+                        <li><a href="" class="item">Work</a></li>
+                        <li><a href="" class="item">Sandals</a></li>
+                        <li><a href="" class="item">Boots</a></li>
+                        <li><a href="" class="item">Athletic Shoes</a></li>
+                    </ul>
+                </div>
+                <div class="item drop">
+                    <a href="#" class="item">ACCESSORIES</a>
+                    <ul class="drop-menu">
+                        <li><a href="" class="item">Hats</a></li>
+                        <li><a href="" class="item">Mini Bags</a></li>
+                        <li><a href="" class="item">Watch</a></li>
+
+                    </ul>
+                </div>
+                <div class="item drop">
+                    <a href="#" class="item">BRANDS</a>
+                    <ul class="drop-menu">
+                        <li><a href="" class="item">Nike</a></li>
+                        <li><a href="" class="item">Adidas</a></li>
+                        <li><a href="" class="item">Timberland</a></li>
+                        <li><a href="" class="item">Puma</a></li>
+                        <li><a href="" class="item">Converse</a></li>
+                        <li><a href="" class="item">Skechers</a></li>
+                    </ul>
+                </div>
+                <div class="item saleoff">
+                    <a href="#" class="item">SALE OFF !</a>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-12 widget-container" style="position: relative;">
+                <a href="#" id="search-btn"><i class="fa fa-search" aria-hidden="true"></i>
+                </a>
+                <form id="search-box">
+                    <input type="text">
+                    <button><i class="fa fa-search" aria-hidden="true"></i></button>
+                </form>
+                <a href="./customer.html"><i class="fa fa-user" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i></a>
+            </div>
+        </div>
+    </header>
+    <div class="body">
+
+
+        <div class="new-arrival block">
+            <div id="myBtnContainer">
+                <button class="btn-filter active" onclick="filterSelection('all')"> Show all</button>
+                <button class="btn-filter" onclick="filterSelection('Adidas')"> Adidas</button>
+                <button class="btn-filter" onclick="filterSelection('Nike')"> Nike</button>
+                <button class="btn-filter" onclick="filterSelection('Vans')"> Vans</button>
+                <button class="btn-filter" onclick="filterSelection('Lining')"> Lining</button>
+            </div>
+            <div class="product-list list row ">
+                <div class="product col-md-3 col-sm-6 col-12 filterDiv Adidas">
+                    <a href="#">
+                        <div class="image">
+                            <div class="overlay">
+                                <button>
+                                    <i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
+                                </button>
+                            </div>
+                            <img src="./image/p5-2.jpg" alt="product">
+                        </div>
+
+                        <div class="info">
+                            <div class="name">NIKE</div>
+                            <div class="main-type">Street</div>
+                            <div class="price">69.69 $</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="product col-md-3 col-sm-6 col-12 filterDiv Nike">
+                    <a href="#">
+                        <div class="image">
+                            <div class="overlay">
+                                <button>
+                                    <i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
+                                </button>
+                            </div>
+                            <img src="./image/p5-1.jpg" alt="product">
+                        </div>
+
+                        <div class="info">
+                            <div class="name">SKECHERS</div>
+                            <div class="main-type">Street</div>
+                            <div class="price">54.99 $</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="product col-md-3 col-sm-6 col-12 filterDiv Vans">
+                    <a href=" # ">
+                        <div class="image ">
+                            <div class="overlay ">
+                                <button>
+                                    <i class="fa fa-cart-arrow-down " aria-hidden="true "></i>
+                                </button>
+                            </div>
+                            <img src="./image/p6.jpg " alt="product ">
+                        </div>
+
+                        <div class="info ">
+                            <div class="name ">NIKE</div>
+                            <div class="main-type ">Street</div>
+                            <div class="price ">60 $</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="product col-md-3 col-sm-6 col-12 filterDiv Lining ">
+                    <a href="# ">
+                        <div class="image ">
+                            <div class="overlay ">
+                                <button>
+                                    <i class="fa fa-cart-arrow-down " aria-hidden="true "></i>
+                                </button>
+                            </div>
+                            <img src="./image/p6-2.jpg " alt="product ">
+                        </div>
+
+                        <div class="info ">
+                            <div class="name ">NIKE</div>
+                            <div class="main-type ">Street</div>
+                            <div class="price ">69 $</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <footer>
+
+        <div class="col-12 col-lg-3 col-sm-4 topic ">
+            <h2>CATEGORIES</h2>
+            <a href="# ">For Men</a>
+            <a href="# ">For Women</a>
+            <a href="# ">Accessories</a>
+            <a href="# ">Other</a>
+        </div>
+        <div class="col-12 col-lg-3 col-sm-4 topic ">
+            <h2>ACCOUNT</h2>
+            <a href="# ">Wishlist</a>
+            <a href="# ">Compare</a>
+            <a href="# ">Subcribe</a>
+            <a href="# ">Login</a>
+        </div>
+        <div class="col-12 col-lg-3 col-sm-4 topic ">
+            <h2>QUICK LINKS</h2>
+            <a href="# ">Shipping & Returns</a>
+            <a href="# ">Privacy Policy</a>
+            <a href="# ">Terms & Conditions</a>
+            <a href="# ">Vacancies</a>
+        </div>
+        <div class="col-12 col-lg-3 col-sm-4 topic ">
+            <h2>CONTACT</h2>
+            <a href=" ">Address: 1 Pham Van Dong, Cau Giay, Ha Noi</a>
+            <a href=" "><i class="fa fa-phone-square " aria-hidden="true "></i> 033.522.9871</a>
+            <a href="# "><i class="fab fa-facebook " aria-hidden="true "></i> Facebook</a>
+            <a href="# "><i class="fab fa-instagram " aria-hidden="true "></i> Instagram</a>
+        </div>
+    </footer>
+    <script>
+        $(document).ready(function() {
+            $("#search-btn ").click(function() {
+                $("#search-box ").fadeToggle("slow ")
+            })
+        })
+    </script>
+</body>
+
+</html>
