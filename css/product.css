@@ -1,0 +1,253 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.head1{
+    width: 100%;
+    background: #111;
+    padding: 15px;
+    font-family:helvetica-medium; 
+}
+
+.head1 .container{
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.head1 .container ul{
+    list-style: none;
+    text-decoration: none;
+    color: #ddd;
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    padding: 0 !important;
+    margin: 0 !important;
+    cursor: pointer;
+}
+
+.head1 .plus{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 1fr);
+    grid-column-gap: 4em;
+}
+
+.head2 .logo img{
+    width:100%; 
+}
+
+.head1 .account{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 1fr);
+    grid-column-gap: 4em;
+}
+
+.head2{
+    width: 100%;
+    background: #e9ecef;
+    font-family: futura-bold;
+    z-index: 999;
+    cursor: pointer;
+}
+
+.head2 .nike{
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+}
+
+.head2 .stellarnav ul{
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.menu{
+    display: grid;
+    list-style: none;
+    grid-auto-flow: column;
+    grid-column-gap: 2.5em;
+    font-size: 1.2em;
+    align-items: center; 
+}
+.stellarnav ul ul{
+    font-family: helveticaNeue-medium !important;
+    font-size: .8em !important;
+}
+.stellarnav.dark .icon-close:after{
+    border-color: #000 !important;
+}
+.stellarnav.dark .icon-close:before{
+    border-color: #000 !important;
+}
+.stellarnav.dark a.dd-toggle .icon-plus:before{
+    border-color: #333 !important;
+}
+.stellarnav.dark a.dd-toggle .icon-plus:after{
+    border-color: #333 !important;
+}
+.menu{
+    z-index: 999999;
+}
+.offers{
+    text-align: center;
+    font-family: futura-bold;
+    border: 0.5px solid #999; 
+}
+.offers h4{
+    margin: 0 !important;
+    padding: 0.6em;
+}
+
+.filter{
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.filter .cap{
+    align-items: center;
+    display: grid;
+    font-family: futura-bold;
+}
+.product-selection {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+
+}
+.select{
+    height: auto;
+}
+.select .size p{ 
+    background: #f1f1f1;
+    display: inline-grid;
+    grid-template-columns: repeat(auto-fit, minmax(4em, 4em)) !important;
+    padding:0.5em;
+    text-align: center;
+    border-radius: 50px;
+    margin: 0.5em;
+}
+.select .size p:hover{
+    border: 0.5px solid #555;
+}
+.select a{
+    color: #444;
+    font-family: helvetica-medium;
+}
+.select a:hover{
+    text-decoration: none;
+    color: #000;
+}
+.product-view{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2em;
+    padding-left: 1.5em;
+    justify-content: space-between;
+    height: fit-content;
+}
+.product-view a{
+    text-decoration: none;
+    color: #333;
+}
+.product-view a:hover{
+    text-decoration: none;
+    color: #333;
+}
+.product-view div{
+    height: 100%;
+}
+.product-view img{
+    width: 100%;
+
+}
+.product-view img:hover{
+    opacity: 0.7;
+    transition: all 0.5s ease-in;
+}
+
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+
+
+.active, .accordion:hover {
+  background-color: #ccc; 
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+.accordion:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+
+
+
+
+@media only screen and (max-width: 767px) {
+    .head1{
+        display: none;
+    }
+    .icon{
+        display: none !important;
+    }
+
+    .head2 .nike{
+        padding: .2em !important;
+    }
+
+    .stellarnav.mobile > ul > li{
+        font-size: .8em !important;
+    }
+    .product-selection{
+        grid-template-columns: none;
+        grid-template-rows: 1fr 5em;
+    }
+    .select{
+        height: auto;
+        position: absolute;
+        background:#fff;
+        width: 92%;
+        z-index: 9999;
+    }
+    .product-view{
+        grid-template-columns: repeat(auto-fit, minmax(9em, 1fr));
+        padding: 0;
+        position: relative;
+        top: 75px;
+    }
+}
+
+@media only screen and (min-width:768px) and (max-width:1023px) {
+    .icon {
+        display: none !important;
+    }
+}
+@media only screen and (min-width:1024px) and (max-width:1366px) {
+    .menu{
+        grid-column-gap: 1em;
+    }
+}
