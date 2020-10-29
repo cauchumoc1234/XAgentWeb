@@ -119,15 +119,10 @@ body{
     padding: 10px;
     display: none;
     background-color: rgb(238, 237, 237);
-    
     z-index: 100;
 }
 .navbtn{
-    display: flex;
     text-align: center;
-}
-.navbtn i{
-    display: block;
 }
 
 .widget-container{
@@ -454,6 +449,11 @@ footer{
     }
 }
 @media screen and (max-width:767px){
+    .row .menu-row .main{
+        display: none;
+    }
+}
+@media screen and (max-width:767px){
     .row  .menu-row{
         justify-content: flex-end;
     }
@@ -463,8 +463,8 @@ footer{
         font-size: 30px;
         cursor: pointer;
     }
-    .row .menu-row .main{
-        display: none;
+    .row .menu-row .responsive{
+        display: block;
         position: fixed;
         flex-direction: column;
         top: 25%;
@@ -475,21 +475,21 @@ footer{
         background-color: rgba(48, 33, 10,0.9);
         overflow-y: scroll;
     }
-    .row .menu-row .main::-webkit-scrollbar {
+    .row .menu-row .responsive::-webkit-scrollbar {
         display: none;
     }
-    .row .menu-row .main .item{
+    .row .menu-row .responsive .item{
         display: inline;
         margin-left: 20px;
         
     }
-    .row .menu-row .main .saleoff a{
+    .row .menu-row .responsive .saleoff a{
         display: block;
         height: 30%;
         padding-left: 30px;
         transform: scale(1.1);
     }
-    .row .menu-row .main .drop .drop-menu{
+    .row .menu-row .responsive .drop .drop-menu{
         position: relative;
         background-color: rgba(235, 229, 229, 0.3);
         
