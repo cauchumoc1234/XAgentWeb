@@ -15,57 +15,154 @@
 
 <body>
     
-    <div data-include="header"></div>
-
-    <div class="checkout_new">
-        <div class="nav_menu_header mb-4">
-            <span>ADD NEW SHIPPING ADDRESS</span>
+    <header class="container-fluid header">
+        <div class="row">
+            <div class="col-lg-3 col-md-12 col-9  logo">
+                <a href="./home.html">
+                    <img src="./image//Logo_head.png" alt="brand">
+                </a>
+            </div>
+            <div class="col-lg-7 col-md-9 col-2 menu-row">
+                <div class="item navbtn">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </div>
+                <div class="main">
+                    <div class="item drop">
+                        <a href="#">CLOTHING</a>
+                        <ul class="drop-menu">
+                            <li><a href="">Jackets</a></li>
+                            <li><a href="">Pants</a></li>
+                            <li><a href="">Shirts</a></li>
+                            <li><a href="">Jeans</a></li>
+                        </ul>
+                    </div>
+                    <div class="item drop">
+                        <a href="#">SHOES</a>
+                        <ul class="drop-menu">
+                            <li><a href="">Work</a></li>
+                            <li><a href="">Sandals</a></li>
+                            <li><a href="">Boots</a></li>
+                            <li><a href="">Running</a></li>
+                        </ul>
+                    </div>
+                    <div class="item drop">
+                        <a href="#">ACCESSORIES</a>
+                        <ul class="drop-menu">
+                            <li><a href="">Hats</a></li>
+                            <li><a href="">Mini Bags</a></li>
+                            <li><a href="">Watch</a></li>
+       
+                        </ul>
+                    </div>
+                    <div class="item drop">
+                        <a href="#">BRANDS</a>
+                        <ul class="drop-menu">
+                            <li><a href="">Nike</a></li>
+                            <li><a href="">Adidas</a></li>
+                            <li><a href="">Timberland</a></li>
+                            <li><a href="">Puma</a></li>
+                            <li><a href="">Converse</a></li>
+                            <li><a href="">Skechers</a></li>
+                        </ul>
+                    </div>
+                    <div class="item saleoff">
+                        <a href="#" class="item">SALE OFF !</a>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="col-lg-2 col-md-3 col-12 widget-container" style="position: relative;">
+                <a href="#" id="search-btn"><i class="fa fa-search" aria-hidden="true"></i>
+                </a>
+                <form id="search-box">
+                    <input type="text">
+                    <button><i class="fa fa-search" aria-hidden="true"></i></button>
+                </form>
+                <a href="./customer.html"><i class="fa fa-user" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i></a>
+            </div>
         </div>
-        <div class="note_form_txt text-center mb-4">
-            <p class="mt-2 mb-0"><strong><a href="#">Use my current location</a></strong></p>
-            <span class="mt-2 mb-0 d-block">or</span>
-            <p class="mt-2 mb-0"><strong>Manually input your address</strong></p>
-        </div>
-        <div class="form-signin">
-            <form>
-
-                <div class="form-label-group">
-                    <input type="text" name="name" id="inputFullname" class="form-control" placeholder="Full name" value="">
-                    <label for="inputFullname"><span>Full name <i class="text-danger">*</i></span></label>
-                </div>
-                <div class="form-label-group">
-                    <input type="text" name="phone" id="inputPhone" class="form-control" placeholder="Phone number" value="">
-                    <label for="inputPhone"><span>Phone number <i class="text-danger">*</i></span></label>
-                </div>
-                <div class="form-label-group">
-                    <input type="email" name="email" id="inputEmail" class="form-control" placeholder="Email" value="">
-                    <label for="inputEmail"><span>Email <i class="text-danger">*</i></span></label>
-                </div>
-                <div class="form-label-group">
-                    <input type="text" name="email" id="inputCity" class="form-control" placeholder="Province/City" value="">
-                    <label for="inputCity"><span>Province/City <i class="text-danger">*</i></span></label>
-                </div>
-                <div class="form-label-group">
-                    <input type="text" name="email" id="inputDistrict" class="form-control" placeholder="District" value="">
-                    <label for="inputDistrict"><span>District <i class="text-danger">*</i></span></label>
-                </div>
-                <div class="form-label-group">
-                    <input type="text" name="email" id="inputWard" class="form-control" placeholder="Ward" value="">
-                    <label for="inputWard"><span>Ward <i class="text-danger">*</i></span></label>
-                </div>
-                <div class="form-label-group">
-                    <input type="text" name="address" id="inputAddress" class="form-control" placeholder="Address (Number-Street)" value="">
-                    <label for="inputAddress"><span>Address (Number-Street) <i class="text-danger">*</i></span></label>
-                </div>
-                <div class="sidebar_btn sidebar_btn_new pt-3">
-                    <button type="submit" class="btn_web btn_red d-flex align-items-center justify-content-center mt-0" onclick="saveOrderInfo('order_save_address',this);"><span>Confirm</span></button>
-                    <a href="hoadon.html" class="btn_web d-flex align-items-center justify-content-center pc mt-0"><span>Back</span></a>
-                </div>
-            </form>
+    </header> 
+    <div class="body" style="margin-top: 50px;">
+        <div class="checkout_new">
+            <div class="nav_menu_header mb-4">
+                <span>ADD NEW SHIPPING ADDRESS</span>
+            </div>
+            <div class="note_form_txt text-center mb-4">
+                <p class="mt-2 mb-0"><strong><a href="#">Use my current location</a></strong></p>
+                <span class="mt-2 mb-0 d-block">or</span>
+                <p class="mt-2 mb-0"><strong>Manually input your address</strong></p>
+            </div>
+            <div class="form-signin">
+                <form>
+    
+                    <div class="form-label-group">
+                        <input type="text" name="name" id="inputFullname" class="form-control" placeholder="Full name" value="">
+                        <label for="inputFullname"><span>Full name <i class="text-danger">*</i></span></label>
+                    </div>
+                    <div class="form-label-group">
+                        <input type="text" name="phone" id="inputPhone" class="form-control" placeholder="Phone number" value="">
+                        <label for="inputPhone"><span>Phone number <i class="text-danger">*</i></span></label>
+                    </div>
+                    <div class="form-label-group">
+                        <input type="email" name="email" id="inputEmail" class="form-control" placeholder="Email" value="">
+                        <label for="inputEmail"><span>Email <i class="text-danger">*</i></span></label>
+                    </div>
+                    <div class="form-label-group">
+                        <input type="text" name="email" id="inputCity" class="form-control" placeholder="Province/City" value="">
+                        <label for="inputCity"><span>Province/City <i class="text-danger">*</i></span></label>
+                    </div>
+                    <div class="form-label-group">
+                        <input type="text" name="email" id="inputDistrict" class="form-control" placeholder="District" value="">
+                        <label for="inputDistrict"><span>District <i class="text-danger">*</i></span></label>
+                    </div>
+                    <div class="form-label-group">
+                        <input type="text" name="email" id="inputWard" class="form-control" placeholder="Ward" value="">
+                        <label for="inputWard"><span>Ward <i class="text-danger">*</i></span></label>
+                    </div>
+                    <div class="form-label-group">
+                        <input type="text" name="address" id="inputAddress" class="form-control" placeholder="Address (Number-Street)" value="">
+                        <label for="inputAddress"><span>Address (Number-Street) <i class="text-danger">*</i></span></label>
+                    </div>
+                    <div class="sidebar_btn sidebar_btn_new pt-3">
+                        <button type="submit" class="btn_web btn_red d-flex align-items-center justify-content-center mt-0" onclick="saveOrderInfo('order_save_address',this);"><span>Confirm</span></button>
+                        <a href="hoadon.html" class="btn_web d-flex align-items-center justify-content-center pc mt-0"><span>Back</span></a>
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
-    <div data-include="footer"></div>
-    <script src="./js//navbar.js"></script>
+    <footer>
+        
+        <div class="col-12 col-lg-3 col-sm-4 topic">
+            <h2>CATEGORIES</h2>
+            <a href="#">For Men</a>
+            <a href="#">For Women</a>
+            <a href="#">Accessories</a>
+            <a href="#">Other</a>
+        </div>
+        <div class="col-12 col-lg-3 col-sm-4 topic">
+            <h2>ACCOUNT</h2>
+            <a href="#">Wishlist</a>
+            <a href="#">Compare</a>
+            <a href="#">Subcribe</a>
+            <a href="#">Login</a>
+        </div>
+        <div class="col-12 col-lg-3 col-sm-4 topic">
+            <h2>QUICK LINKS</h2>
+            <a href="#">Shipping & Returns</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Vacancies</a>
+        </div>
+        <div class="col-12 col-lg-3 col-sm-4 topic">
+            <h2>CONTACT</h2>
+            <a href="">Address: 1 Pham Van Dong, Cau Giay, Ha Noi</a>
+            <a href=""><i class="fa fa-phone-square" aria-hidden="true"></i> 033.522.9871</a>
+            <a href="#"><i class="fab fa-facebook" aria-hidden="true"></i> Facebook</a>
+            <a href="#"><i class="fab fa-instagram" aria-hidden="true"></i> Instagram</a>
+        </div>
+    </footer>
     <script>
         $(function() {
             var includes = $('[data-include]');
