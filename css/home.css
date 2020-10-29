@@ -16,7 +16,7 @@ body{
     min-height: 100px;
     
     z-index: 10;
-    background-color: rgb(238, 235, 235);
+    background-color: rgb(255, 255, 255);
 }
 .header .row{
     width: 80%;
@@ -173,25 +173,56 @@ body{
 .slide-show{
     position: relative;
     width: 100%;
-    max-height: 70vh;
+    min-height: 200px;
+    height: 50vh;
     background-color: rgb(132, 165, 165);
     margin-bottom: 2%;
     overflow: hidden;
 }
 .slides{
-    height: 100%;
+    max-height: 100%;
     width: 400%;
     display: flex;
+    
 }
 .slide{
+    position: relative;
     height: 100%;
     width: 25%;
     transition: 0.6s;
+}
+.slide .banner-info{
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    background-color: rgba(230, 233, 233, 0.5);
+    padding: 2% 10%;
+}
+.banner-info p{
+    color: #fff;
+}
+.banner-info .text{
+    font-size: 30px;
+    font-weight: bold;
+    text-shadow: 2px 2px 0 black;
+}
+.banner-info .button{
+    color: black;
+    background-color: rgb(248, 244, 244);
+    text-align: center;
+    padding: 5% 0;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.banner-info .button:hover{
+    background-color: black;
+    color: white;
 }
 .slide img{
     width: 100%;
     object-fit: cover;
     object-position: 50% 50%;
+    cursor: pointer;
 }
 input[name="r"]{
     position: absolute;
@@ -203,6 +234,7 @@ input[name="r"]{
     left: 50%;
     transform: translateX(-50%);
     display: flex;
+    z-index: 20;
 }
 .bar{
     width: 40px;
@@ -424,6 +456,7 @@ footer{
     color: white;
 }
 @media screen and (max-width: 1024px){
+
     .header{
         height: 25vh;
     }
@@ -446,6 +479,9 @@ footer{
     .brand{
         max-width: 60%;
         margin: auto;
+    }
+    .slide-show{
+        min-height: 200px;
     }
 }
 @media screen and (max-width:767px){
