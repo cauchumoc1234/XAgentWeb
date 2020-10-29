@@ -1,0 +1,106 @@
+
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box}
+
+#mask {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 9000;
+  background-color: #000;
+  display: none;
+  }
+   
+  #boxes .window {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 440px;
+  height: 200px;
+  display: none;
+  z-index: 9999;
+  padding: 0px;
+  border-radius: 15px;
+
+  }
+  #boxes .window .close-icon:hover{
+      cursor: pointer;
+  }
+  #boxes .window .fa{
+    font-size:36px;
+    margin-left: 560px;
+}
+  #boxes #dialog {
+  width: 600px;
+  height: 730px;
+  padding: 10px;
+  font-family: 'Segoe UI Light', sans-serif;
+  font-size: 15pt;
+  background-color: #FFFFFF;
+  margin-top: 60px;
+  
+  }
+  
+
+  #boxes .window input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+ 
+  margin-bottom: 25px;
+}
+
+
+button {
+  background-color: #080808;
+  color: white;
+  padding: 14px 20px;
+  margin-left: 144px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+.signupbtn {
+  float: left;
+  width: 50%;
+}
+.container {
+  padding: 16px;
+}
+.container .logo-div {
+  text-align: center;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+img.logo {
+  width: 40%;
+  height: 50%;
+  
+}
+
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+     width: 100%;
+  }
+}
