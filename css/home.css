@@ -9,14 +9,14 @@ a:hover{
     transition: color linear 0.1s,background-color linear 0.1s ;
 }
 body{
-    background-image: url("https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/v748-toon-80_1_1.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=c377db27ae723ed25d730a35b97c0d88");
+    background-image: url("https://designwoop.com/uploads/2012/05/17580-613x460.jpg");
 }
 .header{
     height: 10vh;
     min-height: 100px;
     
     z-index: 10;
-    background-color: rgb(238, 235, 235);
+    background-image: url("https://designwoop.com/uploads/2012/05/17580-613x460.jpg");
 }
 .header .row{
     width: 80%;
@@ -119,10 +119,15 @@ body{
     padding: 10px;
     display: none;
     background-color: rgb(238, 237, 237);
+    
     z-index: 100;
 }
 .navbtn{
+    display: flex;
     text-align: center;
+}
+.navbtn i{
+    display: block;
 }
 
 .widget-container{
@@ -449,11 +454,6 @@ footer{
     }
 }
 @media screen and (max-width:767px){
-    .row .menu-row .main{
-        display: none;
-    }
-}
-@media screen and (max-width:767px){
     .row  .menu-row{
         justify-content: flex-end;
     }
@@ -463,8 +463,8 @@ footer{
         font-size: 30px;
         cursor: pointer;
     }
-    .row .menu-row .responsive{
-        display: block;
+    .row .menu-row .main{
+        display: none;
         position: fixed;
         flex-direction: column;
         top: 25%;
@@ -475,21 +475,21 @@ footer{
         background-color: rgba(48, 33, 10,0.9);
         overflow-y: scroll;
     }
-    .row .menu-row .responsive::-webkit-scrollbar {
+    .row .menu-row .main::-webkit-scrollbar {
         display: none;
     }
-    .row .menu-row .responsive .item{
+    .row .menu-row .main .item{
         display: inline;
         margin-left: 20px;
         
     }
-    .row .menu-row .responsive .saleoff a{
+    .row .menu-row .main .saleoff a{
         display: block;
         height: 30%;
         padding-left: 30px;
         transform: scale(1.1);
     }
-    .row .menu-row .responsive .drop .drop-menu{
+    .row .menu-row .main .drop .drop-menu{
         position: relative;
         background-color: rgba(235, 229, 229, 0.3);
         
@@ -514,4 +514,9 @@ footer{
     footer{
         padding: 0;
     }   
+}
+@media screen and (max-width:576px){
+    .menu-row{
+
+    }
 }

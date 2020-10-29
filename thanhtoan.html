@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="css\home.css">
+    <title>X-Agent | The best for you</title>
+    <link rel="stylesheet" href="css\thanh toan.css">
+</head>
+
+<body>
+    <script>
+        $(function() {
+            var includes = $('[data-include]');
+            jQuery.each(includes, function() {
+                var file = $(this).data('include') + '.html';
+                $(this).load(file);
+            });
+        });
+    </script>
+    <div data-include="header"></div>
+
+    <div class="checkout_new">
+        <div class="nav_menu_header mb-4">
+            <span>ADD NEW SHIPPING ADDRESS</span>
+        </div>
+        <div class="note_form_txt text-center mb-4">
+            <p class="mt-2 mb-0"><strong><a href="#">Use my current location</a></strong></p>
+            <span class="mt-2 mb-0 d-block">or</span>
+            <p class="mt-2 mb-0"><strong>Manually input your address</strong></p>
+        </div>
+        <div class="form-signin">
+            <form>
+
+                <div class="form-label-group">
+                    <input type="text" name="name" id="inputFullname" class="form-control" placeholder="Full name" value="">
+                    <label for="inputFullname"><span>Full name <i class="text-danger">*</i></span></label>
+                </div>
+                <div class="form-label-group">
+                    <input type="text" name="phone" id="inputPhone" class="form-control" placeholder="Phone number" value="">
+                    <label for="inputPhone"><span>Phone number <i class="text-danger">*</i></span></label>
+                </div>
+                <div class="form-label-group">
+                    <input type="email" name="email" id="inputEmail" class="form-control" placeholder="Email" value="">
+                    <label for="inputEmail"><span>Email <i class="text-danger">*</i></span></label>
+                </div>
+                <div class="form-label-group">
+                    <input type="text" name="email" id="inputCity" class="form-control" placeholder="Province/City" value="">
+                    <label for="inputCity"><span>Province/City <i class="text-danger">*</i></span></label>
+                </div>
+                <div class="form-label-group">
+                    <input type="text" name="email" id="inputDistrict" class="form-control" placeholder="District" value="">
+                    <label for="inputDistrict"><span>District <i class="text-danger">*</i></span></label>
+                </div>
+                <div class="form-label-group">
+                    <input type="text" name="email" id="inputWard" class="form-control" placeholder="Ward" value="">
+                    <label for="inputWard"><span>Ward <i class="text-danger">*</i></span></label>
+                </div>
+                <div class="form-label-group">
+                    <input type="text" name="address" id="inputAddress" class="form-control" placeholder="Address (Number-Street)" value="">
+                    <label for="inputAddress"><span>Address (Number-Street) <i class="text-danger">*</i></span></label>
+                </div>
+                <div class="sidebar_btn sidebar_btn_new pt-3">
+                    <button type="submit" class="btn_web btn_red d-flex align-items-center justify-content-center mt-0" onclick="saveOrderInfo('order_save_address',this);"><span>Confirm</span></button>
+                    <a href="hoadon.html" class="btn_web d-flex align-items-center justify-content-center pc mt-0"><span>Back</span></a>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div data-include="footer"></div>
+</body>
+
+</html>

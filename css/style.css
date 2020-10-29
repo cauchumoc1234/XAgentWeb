@@ -1,0 +1,99 @@
+.order {
+    width: 60rem;
+    min-height: 20rem;
+    box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.25);
+    flex-direction: column;
+    margin: auto;
+    padding: 1.5rem;
+    flex: 1;
+    background: white;
+    border-radius: 1rem 1rem 1rem 1rem;
+    padding-top: 1rem;
+    margin-bottom: 15px;
+}
+
+.order button {
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1.5rem
+}
+
+.order .order-item {
+    font-size: 1.25rem;
+    font-weight: 500;
+    display: flex;
+    margin: 25px 2px;
+}
+
+.order .order-item .products {
+    width: 10rem;
+    position: relative;
+    top: 0;
+    background: white;
+}
+
+.order .order-item button {
+    padding: 0.5rem;
+    width: 35px;
+    height: 35px;
+    line-height: 10px;
+    font-size: 2rem;
+}
+
+.order .order-item button .btn-delete {
+    font-size: 1rem
+}
+
+.order .order-item .item-name {
+    flex-basis: 12rem;
+}
+
+.order .order-item .item-quantity {
+    flex-basis: 10rem;
+    padding-top: 0.5rem;
+}
+
+.order .order-item .item-quantity input {
+    margin-left: 0.5rem;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    top: 2px;
+    bottom: 1px;
+    border: none;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.order .order-item .item-price {
+    margin-left: auto;
+    padding-top: 0.5rem;
+}
+
+.order .order-summary {
+    padding: 1rem;
+    margin: 1.5rem 0;
+    background: wheat;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 2.5rem
+}
+
+.order .order-summary .money {
+    float: right
+}
+
+.order #btn-add {
+    margin-top: 1.5rem;
+    border: 1px solid gray;
+    width: 18rem;
+    background: white
+}
+
+.order #btn-checkout {
+    width: 100%;
+    background: red;
+    color: white
+}

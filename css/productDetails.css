@@ -1,12 +1,6 @@
 .product-details .container{
     margin-top: 100px;
 }
-.product-details{
-    background-color: #F0F0F0;
-    max-width: 90%;
-    padding-bottom: 20px;
-    margin: auto;
-}
 .product-details .newArrival{
     background-color: green;
     color:#fff;
@@ -17,9 +11,6 @@
 .product-details .col-md-7{
     color:#555;
 
-}
-.col-md-5 .slide{
-    width: 100%;
 }
 .product-details .col-md-7 i{
     color:rgb(240, 237, 51)
@@ -53,8 +44,6 @@
 }
 .product-details .carousel-inner img{
    height: 400px;
-   object-fit: contain;
-   object-position: 50% 50%;
 }
 .product-details .col-md-5{
     box-shadow: 2px 2px 3px 5px#F0F0F0;

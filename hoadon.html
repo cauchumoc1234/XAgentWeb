@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="css\home.css">
+    <title>X-Agent | The best for you</title>
+    <link rel="stylesheet" type="text/css" href="css\style.css">
+</head>
+
+<body>
+    <script>
+        $(function() {
+            var includes = $('[data-include]');
+            jQuery.each(includes, function() {
+                var file = $(this).data('include') + '.html';
+                $(this).load(file);
+            });
+        });
+    </script>
+    <div data-include="header"></div>
+    <div class="order">
+        <h1 style="border-bottom: 1px solid #000; color: red;text-transform: uppercase;">Your order from Xagent</h1>
+        <ul id="order-items">
+
+
+        </ul>
+        <button id="btn-add">Add Fashion</button>
+        <div class="order-summary">
+            <p>Subtotal <span id="sub-total" class="money">$249</span></p>
+            <p>Shipping <span id="shipping" class="money">$1</span></p>
+            <p>Total <span id="total" class="money">$250</span></p>
+        </div>
+
+        <a href="thanhtoan.html"><button id="btn-checkout">Checkout</button></a>
+    </div>
+
+    <div data-include="footer"></div>
+
+
+</body>
+<script src="js\script.js"></script>
+
+</html>
