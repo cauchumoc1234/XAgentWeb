@@ -30,7 +30,7 @@
 .button-box{
     margin-bottom: 15px;
     position: relative;
-    box-shadow: 0 0 20px 9px #ff61241f;
+    box-shadow: 0 0 20px 9px #2e2e2e1f;
     border-radius: 30px;
     display: flex;
     width: 70%;
@@ -55,12 +55,12 @@
     height: 100%;
     width: 32%;
     background-color: aqua;
-    background: linear-gradient(to right, #ff105f,#ffad06);
+    background: rgb(185, 183, 183);;
     border-radius: 30px;
     left: 0;
 }
 .box form h1{
-    color: salmon;
+    color: rgb(194, 194, 194);
 }
 #order-list{
     display: none;
