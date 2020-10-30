@@ -1,3 +1,11 @@
+body{
+    display: flex;
+    flex-direction: column;
+}
+.body{
+    background-color: rgba(0, 0, 0, 0.1);
+    margin-bottom: 0;
+}
 .box{
     margin: 100px auto;
     padding: 15px 5%;
