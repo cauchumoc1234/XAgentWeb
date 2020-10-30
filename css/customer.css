@@ -43,7 +43,7 @@ body{
     outline: none;
     position: relative;
     flex-grow: 1;
-    color: rgb(66, 67, 68);
+    color: rgb(7, 7, 7);
 }
 .toggle-btn:focus{
     outline: none;
@@ -95,11 +95,11 @@ body{
     cursor: pointer;
     display: block;
     margin: auto;
-    background:rgba(206, 205, 205, 0.5);;
+    background:rgb(0, 0, 0);;
     border: 0;
     outline: 0;
     border-radius: 30px;
-    color: rgb(58, 58, 58);
+    color: rgb(253, 249, 249);
     transition: 0.3s;
 }
 .submit-btn:hover{
