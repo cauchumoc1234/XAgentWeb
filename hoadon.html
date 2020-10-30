@@ -14,6 +14,124 @@
 </head>
 
 <body>
+    <header class="container-fluid header">
+        <div class="row">
+            <div class="col-lg-3 col-md-12 col-9  logo">
+                <a href="./home.html">
+                    <img src="./image//Logo_head.png" alt="brand">
+                </a>
+            </div>
+            <div class="col-lg-7 col-md-9 col-2 menu-row">
+                <div class="item navbtn">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </div>
+                <div class="main">
+                    <div class="item drop">
+                        <a href="#">CLOTHING</a>
+                        <ul class="drop-menu">
+                            <li><a href="">Jackets</a></li>
+                            <li><a href="">Pants</a></li>
+                            <li><a href="">Shirts</a></li>
+                            <li><a href="">Jeans</a></li>
+                        </ul>
+                    </div>
+                    <div class="item drop">
+                        <a href="#">SHOES</a>
+                        <ul class="drop-menu">
+                            <li><a href="">Work</a></li>
+                            <li><a href="">Sandals</a></li>
+                            <li><a href="">Boots</a></li>
+                            <li><a href="">Running</a></li>
+                        </ul>
+                    </div>
+                    <div class="item drop">
+                        <a href="#">ACCESSORIES</a>
+                        <ul class="drop-menu">
+                            <li><a href="">Hats</a></li>
+                            <li><a href="">Mini Bags</a></li>
+                            <li><a href="">Watch</a></li>
+       
+                        </ul>
+                    </div>
+                    <div class="item drop">
+                        <a href="#">BRANDS</a>
+                        <ul class="drop-menu">
+                            <li><a href="">Nike</a></li>
+                            <li><a href="">Adidas</a></li>
+                            <li><a href="">Timberland</a></li>
+                            <li><a href="">Puma</a></li>
+                            <li><a href="">Converse</a></li>
+                            <li><a href="">Skechers</a></li>
+                        </ul>
+                    </div>
+                    <div class="item saleoff">
+                        <a href="#" class="item">SALE OFF !</a>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="col-lg-2 col-md-3 col-12 widget-container" style="position: relative;">
+                <a href="#" id="search-btn"><i class="fa fa-search" aria-hidden="true"></i>
+                </a>
+                <form id="search-box">
+                    <input type="text">
+                    <button><i class="fa fa-search" aria-hidden="true"></i></button>
+                </form>
+                <a href="./customer.html"><i class="fa fa-user" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i></a>
+            </div>
+        </div>
+    </header> 
+    <div class="body" style="margin-top: 50px;">
+        <div class="order">
+            <h1 style="border-bottom: 1px solid #000; color: rgb(173, 173, 173);">Your order from Xagent</h1>
+            <ul id="order-items">
+            </ul>
+            <button id="btn-add">Add Fashion</button>
+            <div class="order-summary">
+                <p>Subtotal <span id="sub-total" class="money">$249</span></p>
+                <p>Shipping <span id="shipping" class="money">$1</span></p>
+                <p>Total <span id="total" class="money">$250</span></p>
+            </div>
+    
+            <a href="thanhtoan.html"><button id="btn-checkout">Checkout</button></a>
+        </div>
+    </div>
+    
+
+    <footer>
+        
+        <div class="col-12 col-lg-3 col-sm-4 topic">
+            <h2>CATEGORIES</h2>
+            <a href="#">For Men</a>
+            <a href="#">For Women</a>
+            <a href="#">Accessories</a>
+            <a href="#">Other</a>
+        </div>
+        <div class="col-12 col-lg-3 col-sm-4 topic">
+            <h2>ACCOUNT</h2>
+            <a href="#">Wishlist</a>
+            <a href="#">Compare</a>
+            <a href="#">Subcribe</a>
+            <a href="#">Login</a>
+        </div>
+        <div class="col-12 col-lg-3 col-sm-4 topic">
+            <h2>QUICK LINKS</h2>
+            <a href="#">Shipping & Returns</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Vacancies</a>
+        </div>
+        <div class="col-12 col-lg-3 col-sm-4 topic">
+            <h2>CONTACT</h2>
+            <a href="">Address: 1 Pham Van Dong, Cau Giay, Ha Noi</a>
+            <a href=""><i class="fa fa-phone-square" aria-hidden="true"></i> 033.522.9871</a>
+            <a href="#"><i class="fab fa-facebook" aria-hidden="true"></i> Facebook</a>
+            <a href="#"><i class="fab fa-instagram" aria-hidden="true"></i> Instagram</a>
+        </div>
+    </footer>
+    <script src="js\script.js"></script>
+    <script src="js\navbar.js"></script>
     <script>
         $(function() {
             var includes = $('[data-include]');
@@ -23,27 +141,7 @@
             });
         });
     </script>
-    <div data-include="header"></div>
-    <div class="order">
-        <h1 style="border-bottom: 1px solid #000; color: red;text-transform: uppercase;">Your order from Xagent</h1>
-        <ul id="order-items">
-
-
-        </ul>
-        <button id="btn-add">Add Fashion</button>
-        <div class="order-summary">
-            <p>Subtotal <span id="sub-total" class="money">$249</span></p>
-            <p>Shipping <span id="shipping" class="money">$1</span></p>
-            <p>Total <span id="total" class="money">$250</span></p>
-        </div>
-
-        <a href="thanhtoan.html"><button id="btn-checkout">Checkout</button></a>
-    </div>
-
-    <div data-include="footer"></div>
-
-
 </body>
-<script src="js\script.js"></script>
+
 
 </html>
