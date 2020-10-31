@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="Sign-up.css">
+        <link rel="stylesheet" href="css/sign-up.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     </head>
@@ -14,19 +14,19 @@
             <form>
                 <div class="container">
                   <div class="logo-div">
-                    <img src="Logo_head.png" alt="Logo" class="logo">
+                    <img src="image/Logo_head.png" alt="Logo" class="logo">
                     <p>Please fill in this form to create an account.</p>
                     <hr>
                   </div>
                     
-                  <label for="email"><b class="labelname">Email</b></label>
-                  <input type="text" placeholder="Enter Email" name="email" required>
+                  <label for="user"><b>User Name</b></label>
+                  <input type="text" placeholder="Enter User Name" name="user" required>
               
-                  <label for="psw"><b>Password</b class="labelname"></label>
+                  <label for="email"><b>Email</b></label>
+                  <input type="password" placeholder="Enter Email" name="email" required>
+              
+                  <label for="psw"><b>Password</b></label>
                   <input type="password" placeholder="Enter Password" name="psw" required>
-              
-                  <label for="psw-repeat"><b class="labelname">Repeat Password</b></label>
-                  <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
                   
                   <label>
                     <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
@@ -42,5 +42,5 @@
         <div id="mask"></div>
         </div>
 </body>
-<script src="Sign-in.js"></script>
+<script src="js/sign-in.js"></script>
 </html>
