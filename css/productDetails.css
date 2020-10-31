@@ -151,7 +151,9 @@
       display: none;
     }
   }
-
+  .col-md-12 {
+      margin-bottom: 10px;
+  }
   .col-md-12 .row .col-md-5{
       margin-top: 10px;
       text-align:left;
