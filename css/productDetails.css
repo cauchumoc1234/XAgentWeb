@@ -5,11 +5,11 @@
 .product-details{
     background-color: #fff;
     max-width: 90%;
-    padding-bottom: 20px;
     margin: auto;
     margin-bottom: 50px;
     padding-left: 10px;
 }
+
 .product-details .newArrival{
     background-color: green;
     color:#fff;

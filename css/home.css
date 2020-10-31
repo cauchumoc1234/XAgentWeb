@@ -296,12 +296,13 @@ input[name="r"]{
     min-height: 200px;
     margin-bottom: 2%;
     margin: 0 auto;
-    
+    box-shadow: 1px 1px 5px;
 }
 .product{
     transition: linear 0.2s;
-    background-color: rgb(250, 246, 242);
-    margin-bottom: 1%;
+    background-color: rgb(243, 243, 243);
+    border-right: 1px solid rgba(177, 172, 172, 0.3);;
+    border-bottom: 1px solid rgba(177, 172, 172, 0.3)
 }
 .product:hover{
     background-color: rgb(236, 236, 236);
