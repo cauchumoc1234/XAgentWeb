@@ -1,12 +1,15 @@
-.product-details .container{
-    margin-top: 100px;
-}
+
+
 .product-details{
-    background-color: #F0F0F0;
+    /* background-color: #F0F0F0; */
+    background:white;
     max-width: 90%;
-    padding-bottom: 20px;
     margin: auto;
+    box-shadow: 5px 5px 10px 3px;
+    padding: 5% 0;
+    margin-top: 50px;
 }
+
 .product-details .newArrival{
     background-color: green;
     color:#fff;
