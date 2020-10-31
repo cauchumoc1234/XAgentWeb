@@ -22,10 +22,10 @@ acc[0].addEventListener("click", function(){
     xselect.style.width = "0%";
     acc[0].innerHTML = "";
   }
-  if(xx.style.gridTemplateColumns =="1fr 2fr"){
+  if(xx.style.gridTemplateColumns =="1fr 3fr"){
     xx.style.gridTemplateColumns = "0.1fr 2fr";
   }
-  else  xx.style.gridTemplateColumns = "1fr 2fr";
+  else  xx.style.gridTemplateColumns = "1fr 3fr";
 })
 
 for (i = 0; i < acc.length; i++) {

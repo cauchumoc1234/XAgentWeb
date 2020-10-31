@@ -117,10 +117,11 @@ body{
 .product-selection {
     display: grid;
     grid-template-columns: 1fr 2fr;
-
+    max-width: 95%;
 }
 .select{
     height: auto;
+    padding-right: 10px;
 }
 .select .size p{ 
     background: #f1f1f1;
@@ -144,11 +145,17 @@ body{
 }
 .product-view{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 2em;
-    padding-left: 1.5em;
+    padding-left: 1.0em;
+    padding-right: 1.0em;
     justify-content: space-between;
     height: fit-content;
+    margin-bottom: 2%;
+    margin: 0 auto;
+    box-shadow: 1px 2px 5px;
+    text-align: center;
+    padding-top: 1em;
 }
 .product-view a{
     text-decoration: none;
@@ -163,7 +170,7 @@ body{
 }
 .product-view img{
     width: 100%;
-
+    
 }
 .product-view img:hover{
     opacity: 0.7;
