@@ -192,9 +192,9 @@ body{
 }
 .slide .banner-info{
     position: absolute;
-    top: 15%;
-    left: 10%;
-    background-color: rgba(230, 233, 233, 0.5);
+    top: 10%;
+    right: 10%;
+    background-color: rgba(65, 67, 68, 0.5);
     padding: 2% 10%;
 }
 .banner-info p{
@@ -203,11 +203,10 @@ body{
 .banner-info .text{
     font-size: 30px;
     font-weight: bold;
-    text-shadow: 2px 2px 0 black;
 }
 .banner-info .button{
-    color: black;
-    background-color: rgb(248, 244, 244);
+    color: white;
+    background-color:#e87136;
     text-align: center;
     padding: 5% 0;
     cursor: pointer;
