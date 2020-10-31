@@ -11,13 +11,14 @@
 }
 
 .product-details .newArrival{
-    background-color: green;
+    background-color: black;
     color:#fff;
     width:50px;
     font-size:12px;
     font-weight: bold;
 }
 .product-details .col-md-4{
+    padding-left: 30px;
     color:#555;
 
 }
@@ -25,13 +26,13 @@
     width: 100%;
 }
 .product-details .col-md-4 i{
-    color:rgb(240, 237, 51)
+    color:orange;
 }
 .product-details .col-md-4 .price{
-    color:#FE980F;
+    color:black;
     font-size:26px;
     font-weight: bold;
-    padding-top: 20px;
+    padding-top: 10px;
 }
 .product-details .col-md-4 input{
     border: 1px solid #ccc;
@@ -41,15 +42,22 @@
     width: 30px;
 }
 .product-details .col-md-4 .cart{
-   background-color: #FE980F;
+   background-color: red;
    color:#FFFFFF;
    font-size:15px;
    margin-top: 10px;
 }
 .product-details .col-md-4 .buy-now{
    color:#FFFFFF;
+   background-color: black;
    font-size:15px;
    margin-top: 10px;
+}
+.product-details .col-md-4 .cart:hover{
+   background-color: rgb(238, 113, 113);
+}
+.product-details .col-md-4 .buy-now:hover{
+   background-color: rgb(87, 72, 72);
 }
 .product-details .carousel-inner{
    height: 400px;
