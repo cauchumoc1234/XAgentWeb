@@ -1,52 +1,63 @@
 .product-details .container{
-    margin-top: 100px;
+    padding-top:10px;
+    margin-top: 50px;
 }
 .product-details{
-    background-color: #F0F0F0;
+    background-color: #fff;
     max-width: 90%;
-    padding-bottom: 20px;
     margin: auto;
+    margin-bottom: 50px;
+    padding-left: 10px;
 }
+
 .product-details .newArrival{
-    background-color: green;
+    background-color: black;
     color:#fff;
     width:50px;
     font-size:12px;
     font-weight: bold;
 }
-.product-details .col-md-7{
+.product-details .col-md-4{
+    padding-left: 30px;
     color:#555;
 
 }
-.col-md-5 .slide{
+.col-md-8 .slide{
     width: 100%;
 }
-.product-details .col-md-7 i{
-    color:rgb(240, 237, 51)
+.product-details .col-md-4 i{
+    color:orange;
 }
-.product-details .col-md-7 .price{
-    color:#FE980F;
+.product-details .col-md-4 .price{
+    color:black;
     font-size:26px;
     font-weight: bold;
-    padding-top: 20px;
+    padding-top: 10px;
 }
-.product-details .col-md-7 input{
+.product-details .col-md-4 input{
     border: 1px solid #ccc;
     font-weight: bold;
     height: 33px;
     text-align: center;
     width: 30px;
 }
-.product-details .col-md-7 .cart{
-   background-color: #FE980F;
+.product-details .col-md-4 .cart{
+   background-color: red;
    color:#FFFFFF;
    font-size:15px;
    margin-top: 10px;
 }
-.product-details .col-md-7 .buy-now{
+.product-details .col-md-4 .buy-now{
    color:#FFFFFF;
+   background-color: black;
    font-size:15px;
    margin-top: 10px;
+}
+.product-details .col-md-4 .cart:hover{
+   background-color: rgb(238, 113, 113);
+}
+.product-details .col-md-4 .buy-now:hover{
+   background-color: rgb(87, 72, 72);
 }
 .product-details .carousel-inner{
    height: 400px;
@@ -56,6 +67,102 @@
    object-fit: contain;
    object-position: 50% 50%;
 }
-.product-details .col-md-5{
+.product-details .col-md-8{
     box-shadow: 2px 2px 3px 5px#F0F0F0;
 }
+.product-details .col-md-12{
+    margin-top: 15px;
+}
+.isDisplay{
+    border-bottom: 2px solid black;
+}
+.col-md-12 .bg-light{
+    background-color: #fff!important;
+    border-bottom: 1px solid #4844447a;
+    color: black!important;
+}
+.nav-item a{
+    color:black;
+    cursor: pointer;
+}
+.col-md-12 .row .col-md-4{
+    margin-left: 30px;
+}
+.col-md-12 .row .col-md-4 li{
+    margin-left: 15px;
+}
+.rating-block{
+	background-color:#FAFAFA;
+	border:1px solid #EFEFEF;
+	padding:15px 15px 20px 15px;
+	border-radius:3px;
+}
+.heading {
+    font-size: 25px;
+    margin-right: 25px;
+  }
+  
+  .fa {
+    font-size: 25px;
+  }
+  
+  .checked {
+    color: orange;
+  }
+  
+  /* Three column layout */
+  .side {
+    float: left;
+    width: 15%;
+    margin-top:10px;
+  }
+  
+  .middle {
+    margin-top:10px;
+    float: left;
+    width: 70%;
+  }
+  
+  /* Place text to the right */
+  .right {
+    text-align: right;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* The bar container */
+  .bar-container {
+    width: 100%;
+    background-color: #f1f1f1;
+    text-align: center;
+    color: white;
+  }
+  
+  /* Individual bars */
+  .bar-5 {width: 60%; height: 18px; background-color: #4CAF50;}
+  .bar-4 {width: 30%; height: 18px; background-color: #2196F3;}
+  .bar-3 {width: 10%; height: 18px; background-color: #00bcd4;}
+  .bar-2 {width: 4%; height: 18px; background-color: #ff9800;}
+  .bar-1 {width: 15%; height: 18px; background-color: #f44336;}
+  
+  /* Responsive layout - make the columns stack on top of each other instead of next to each other */
+  @media (max-width: 400px) {
+    .side, .middle {
+      width: 100%;
+    }
+    .right {
+      display: none;
+    }
+  }
+  .col-md-12 {
+      margin-bottom: 10px;
+  }
+  .col-md-12 .row .col-md-5{
+      margin-top: 10px;
+      text-align:left;
+  }

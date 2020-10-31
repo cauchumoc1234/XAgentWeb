@@ -1,3 +1,6 @@
+.body{
+    margin-bottom: 50px;
+}
 .order {
     width: 60rem;
     min-height: 20rem;
@@ -10,6 +13,10 @@
     border-radius: 1rem 1rem 1rem 1rem;
     padding-top: 1rem;
     margin-bottom: 15px;
+}
+#order-items{
+    border: 1px solid rgb(207, 207, 207);
+    overflow: scroll;
 }
 
 .order button {
@@ -24,6 +31,8 @@
     font-weight: 400;
     display: flex;
     margin: 25px 2px;
+    border-bottom: 1px solid rgb(204, 202, 202);
+    padding: 2% 2%;
 }
 
 .order .order-item .products {
@@ -74,7 +83,7 @@
 .order .order-summary {
     padding: 1rem;
     margin: 1.5rem 0;
-    background: wheat;
+    background: rgb(245, 233, 211);
     border-radius: 0.5rem;
     font-size: 1.5rem;
     font-weight: 400;
@@ -94,6 +103,9 @@
 
 .order #btn-checkout {
     width: 100%;
-    background: red;
+    background: rgb(160, 17, 17);
     color: white
+}
+#btn-checkout:active{
+    background-color: rgb(199, 65, 32);
 }
