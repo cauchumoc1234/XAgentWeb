@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Details</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -87,7 +88,7 @@
     <div class="product-details">
         <div class="container">
             <div class="row">
-                <div class="col-md-5">
+                <div class="col-md-8">
                     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                         <div class="carousel-inner">
                           <div class="carousel-item active">
@@ -110,7 +111,7 @@
                         </a>
                       </div>
                 </div>
-                <div class="col-md-7">
+                <div class="col-md-4">
                     <p class="newArrival text-center">NEW</p>
                     <h2>SKECHERS</h2>
                     <p>Product Code: 1234</p>
@@ -143,9 +144,69 @@
                         <button type="submit" class="btn btn-success buy-now">Buy now</button>
                     </form>
                 </div>
+                <div class="col-md-12">
+                    <nav id="navbar-example2" class="navbar navbar-light bg-light justify-content-md-center">
+                        <ul class="nav nav-pills">
+                          <li class="nav-item isDisplay" id="cls-nav">
+                            <a class="nav-link">Collections</a>
+                          </li>
+                          <li class="nav-item" id="dts-nav">
+                            <a class="nav-link">Details</a>
+                          </li>
+                          <li class="nav-item" id="rvs-nav">
+                            <a class="nav-link">Reviews</a>
+                          </li>
+                        </ul>
+                      </nav>
+                        <div id="content-nav">
+                            <div class="row justify-content-md-center"  id="cls">
+                                <div class="col-md-4">
+                                    <img src="./image/p5-1.jpg" alt="First slide">
+                                </div>
+                                <div class="col-md-4">
+                                    <img src="./image/p5.jpg" alt="First slide">
+                                </div>
+                                <div class="col-md-4">
+                                    <img src="./image/p5-2.jpg" alt="First slide">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
             </div>
         </div>
     </div>
+    <footer>
+
+        <div class="col-12 col-lg-3 col-sm-4 topic">
+            <h2>CATEGORIES</h2>
+            <a href="#">For Men</a>
+            <a href="#">For Women</a>
+            <a href="#">Accessories</a>
+            <a href="#">Other</a>
+        </div>
+        <div class="col-12 col-lg-3 col-sm-4 topic">
+            <h2>ACCOUNT</h2>
+            <a href="#">Wishlist</a>
+            <a href="#">Compare</a>
+            <a href="#">Subcribe</a>
+            <a href="#">Login</a>
+        </div>
+        <div class="col-12 col-lg-3 col-sm-4 topic">
+            <h2>QUICK LINKS</h2>
+            <a href="#">Shipping & Returns</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Vacancies</a>
+        </div>
+        <div class="col-12 col-lg-3 col-sm-4 topic">
+            <h2>CONTACT</h2>
+            <a href="">Address: 1 Pham Van Dong, Cau Giay, Ha Noi</a>
+            <a href=""><i class="fa fa-phone-square" aria-hidden="true"></i> 033.522.9871</a>
+            <a href="#"><i class="fab fa-facebook" aria-hidden="true"></i> Facebook</a>
+            <a href="#"><i class="fab fa-instagram" aria-hidden="true"></i> Instagram</a>
+        </div>
+    </footer>
     <script src="./js/navbar.js"></script>
+    <script src="./js/details.js"></script>
 </body>
 </html>
