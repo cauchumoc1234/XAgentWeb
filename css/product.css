@@ -122,6 +122,7 @@ body{
 .select{
     height: auto;
     padding-right: 10px;
+    text-transform: uppercase;
 }
 .select .size p{ 
     background: #f1f1f1;
