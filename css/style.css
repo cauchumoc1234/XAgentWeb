@@ -16,7 +16,6 @@
 }
 #order-items{
     border: 1px solid rgb(207, 207, 207);
-    overflow: scroll;
 }
 
 .order button {
@@ -34,7 +33,9 @@
     border-bottom: 1px solid rgb(204, 202, 202);
     padding: 2% 2%;
 }
-
+.order-item:last-child{
+    margin-bottom: 0;
+}
 .order .order-item .products {
     width: 10rem;
     position: relative;
