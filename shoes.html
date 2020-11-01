@@ -124,7 +124,8 @@
                     </div>
                     
                     <button class="accordion font-weight-bold mb-3">PRICE</button>
-                    <input type="range" class="custom-range p-4" id="customRange" name="points1">
+                    <p>Value: <span id="demo"></span> $</p>
+                    <input type="range" class="custom-range p-4" id="customRange" name="points1" min="99" max="1500" value="500" >
 
 
                     <button class="accordion font-weight-bold mb-3">BRAND</button>
@@ -423,5 +424,14 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="js/stellarnav.js"></script>
     <script src="js/product.js"></script>
+    <script>
+        var slider = document.getElementById("customRange");
+        var output = document.getElementById("demo");
+        output.innerHTML = slider.value;
+
+        slider.oninput = function() {
+          output.innerHTML = this.value;
+        }
+    </script>
 </body>
 </html>
