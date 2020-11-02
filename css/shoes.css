@@ -2,13 +2,16 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 a:hover {
     text-decoration: none;
     transition: color linear 0.1s, background-color linear 0.1s;
 }
-
+h4{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+}
 body {
     background-image: url("https://designwoop.com/uploads/2012/05/17580-613x460.jpg");
 }

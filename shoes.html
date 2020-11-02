@@ -9,9 +9,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
     <link rel="stylesheet" href="css/home.css">
-    <link rel="stylesheet" href="css/product.css">
-
-   
+    <link rel="stylesheet" href="css/product.css">   
     
 </head>
 <body>
@@ -87,15 +85,13 @@
 
         <section class="offers">
             <div class="container">
-                <h4>OFFICIAL AGENT STORE</h4>
+                <h4 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">OFFICIAL AGENT STORE</h4>
             </div>
         </section>
 
         <section class="mt-3">
-            <div class="container filter">
-                <div class="cap">
-                    <h4>FILTER</h4>
-                </div>
+            <div class="container filter d-flex justify-content-end" style="margin-right: 35px;">
+                
                 <div class="sort">
                     <form>
                         <select name="cars" class="custom-select">
@@ -117,69 +113,50 @@
                   <div class="panel">
                     <button class="accordion font-weight-bold mb-3">CATAGORIES</button>
                     <div class="panel">
-                      <input type="radio" id="male" name="gender" value="1">
+                      <input type="checkbox" id="male" name="gender" value="1">
                       <label for="male">Lifestyle</label><br>
-                      <input type="radio" id="female" name="gender" value="2">
+                      <input type="checkbox" id="female" name="gender" value="2">
                       <label for="female">Jordan</label><br>
-                      <input type="radio" id="other" name="gender" value="3">
+                      <input type="checkbox" id="other" name="gender" value="3">
                       <label for="other">Running </label>
                       <br>
-                      <input type="radio" id="other" name="gender" value="4">
+                      <input type="checkbox" id="other" name="gender" value="4">
                       <label for="other">Basketball</label>
                     </div>
                     
                     <button class="accordion font-weight-bold mb-3">PRICE</button>
-                    <input type="range" class="custom-range p-4" id="customRange" name="points1">
-
+                    <input type="range" class="custom-range p-4" id="customerRange" min="99" max="1500" value="500" name="points1">
+                    <p>Price: <span id="range_vl"></span> $</p>
 
                     <button class="accordion font-weight-bold mb-3">BRAND</button>
                     <div class="panel">
-                      <input type="radio" id="male" name="gender1" value="1">
+                      <input type="checkbox" id="male" name="gender1" value="1">
                       <label for="male">Nike</label><br>
-                      <input type="radio" id="female" name="gender1" value="2">
+                      <input type="checkbox" id="female" name="gender1" value="2">
                       <label for="female">Nike Sportware</label><br>
-                      <input type="radio" id="other" name="gender1" value="3">
+                      <input type="checkbox" id="other" name="gender1" value="3">
                       <label for="other">Jordan </label>
                       <br>
-                      <input type="radio" id="other" name="gender1" value="4">
+                      <input type="checkbox" id="other" name="gender1" value="4">
                       <label for="other">Nike By You </label>
                       <br>
-                      <input type="radio" id="other" name="gender1" value="5">
+                      <input type="checkbox" id="other" name="gender1" value="5">
                       <label for="other">NikeLab </label>
                       <br>
-                      <input type="radio" id="other" name="gender1" value="6">
+                      <input type="checkbox" id="other" name="gender1" value="6">
                       <label for="other">ACG </label>
-                    </div>
-
-                    <button class="accordion font-weight-bold mb-3">AIR MAX</button>
-                    <div class="panel">
-                      <input type="radio" id="male" name="gender2" value="1">
-                      <label for="male">Air Max 1</label><br>
-                      <input type="radio" id="female" name="gender2" value="2">
-                      <label for="female">Air Max 90</label><br>
-                      <input type="radio" id="other" name="gender2" value="3">
-                      <label for="other">Air Max 95 </label>
-                      <br>
-                      <input type="radio" id="other" name="gender2" value="4">
-                      <label for="other">Air Max 97 </label>
-                      <br>
-                      <input type="radio" id="other" name="gender2" value="5">
-                      <label for="other">Air Max 200 </label>
-                      <br>
-                      <input type="radio" id="other" name="gender2" value="6">
-                      <label for="other">Air Max 270 </label>
                     </div>
 
                     <button class="accordion font-weight-bold mb-3">SHOES</button>
                     <div class="panel">
-                      <input type="radio" id="male" name="gender3" value="1">
+                      <input type="checkbox" id="male" name="gender3" value="1">
                       <label for="male">Boots</label><br>
-                      <input type="radio" id="female" name="gender3" value="2">
+                      <input type="checkbox" id="female" name="gender3" value="2">
                       <label for="female">Cleats & Spikes</label><br>
-                      <input type="radio" id="other" name="gender3" value="3">
+                      <input type="checkbox" id="other" name="gender3" value="3">
                       <label for="other">Sandals, Slides & Flip </label>
                       <br>
-                      <input type="radio" id="other" name="gender3" value="4">
+                      <input type="checkbox" id="other" name="gender3" value="4">
                       <label for="other">Flops </label>
                     </div>
 
@@ -204,21 +181,21 @@
 
                     <button class="accordion font-weight-bold mb-3">MATERIAL</button>
                     <div class="panel">
-                      <input type="radio" id="male" name="gender4" value="1">
+                      <input type="checkbox" id="male" name="gender4" value="1">
                       <label for="male">Canvas</label><br>
-                      <input type="radio" id="female" name="gender4" value="2">
+                      <input type="checkbox" id="female" name="gender4" value="2">
                       <label for="female">Leather</label><br>
-                      <input type="radio" id="other" name="gender4" value="3">
+                      <input type="checkbox" id="other" name="gender4" value="3">
                       <label for="other">Synthetic </label>
                     </div>
 
                     <button class="accordion font-weight-bold mb-3">BENEFITS</button>
                     <div class="panel">
-                      <input type="radio" id="male" name="gender5" value="1">
+                      <input type="checkbox" id="male" name="gender5" value="1">
                       <label for="male">Ultra Comfort</label><br>
-                      <input type="radio" id="female" name="gender5" value="2">
+                      <input type="checkbox" id="female" name="gender5" value="2">
                       <label for="female">Tuned Speed</label><br>
-                      <input type="radio" id="other" name="gender5" value="3">
+                      <input type="checkbox" id="other" name="gender5" value="3">
                       <label for="other">Natural Motion </label>
                     </div>
 
@@ -439,5 +416,14 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="js/stellarnav.js"></script>
     <script src="js/product.js"></script>
+    <script>
+        var slider = document.getElementById("customerRange");
+        var output = document.getElementById("range_vl");
+        output.innerHTML = slider.value;
+
+        slider.oninput = function() {
+          output.innerHTML = this.value;
+        }
+    </script>
 </body>
 </html>

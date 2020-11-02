@@ -157,6 +157,8 @@ body{
     box-shadow: 1px 2px 5px;
     text-align: center;
     padding-top: 1em;
+    background-color: #fff;
+    
 }
 .product-view a{
     text-decoration: none;
@@ -168,6 +170,12 @@ body{
 }
 .product-view div{
     height: 100%;
+    padding: 20px;
+    transition: 0.3s;
+}
+.product-view div:hover{
+    background-color: rgb(236, 235, 235);
+    box-shadow: 3px 3px 10px;
 }
 .product-view img{
     width: 100%;
