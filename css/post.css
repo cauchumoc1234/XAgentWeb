@@ -1,0 +1,56 @@
+.body{
+    max-width: 80%;
+    margin: auto;
+}
+.post-view{
+    margin: 30px 0;
+    background-color: white;
+    padding: 50px 50px;
+}
+.post-view .title{
+    font-size: 40px;
+    font-weight: 500;
+    color: black;
+}
+.post-view .title:hover{
+    color: gray;
+}
+.general-info{
+    justify-content: flex-start;
+}
+.general-info p{
+    margin-right: 20px;
+}
+.sapo{
+    margin-top: 20px;
+    font-weight: 500;
+}
+.post-view img{
+    width: 90%;
+    margin: auto;
+    display: block;
+}
+.post-view small{
+    width: 90%;
+    margin: auto;
+    display: block;
+    text-align: center;
+    margin: 10px 0;
+}
+.post-view article{
+    margin: 20px 0;
+}
+.read-more a{
+    display: block;
+    margin-bottom: 10px;
+    color: rgb(82, 81, 81);
+}
+.read-more a:first-child{
+    color: rgb(194, 106, 106);
+    font-style: italic;
+    margin-bottom: 10px;
+}
+.read-more a:hover{
+    font-style: italic;
+    text-decoration: underline;
+}
