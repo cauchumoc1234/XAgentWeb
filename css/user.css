@@ -93,7 +93,6 @@ body{
     background-color: #f57e4f;
     color: #f7eef1;
     font-weight: 500;
-    flex-grow: 1;
     font-size: 12px;
 }
 .tag{
@@ -104,7 +103,8 @@ body{
     flex-wrap: wrap;
 }
 .option{
-    flex-grow: 2;
+    /* flex-grow: 2; */
+    min-width: 60px;
 }
 .option span{
     display: block;

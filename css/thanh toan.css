@@ -1,3 +1,7 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 .checkout_new {
     padding: 3.2rem 0;
     min-height: calc(100vh - 22.3rem);
